@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易考拉.活动页</title>
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../font_f4j0iohdi/iconfont.css" />
+</head>
+
+<body>
+    <!-- 结构 start-->
+    <!-- 导航 -->
+    <nav id="topNav">
+        <div id="topNavWrap" class="clearfix">
+
+            <div id="topNavLeft">
+                <span class="f-hkdn f-hkdnact">考拉欢迎你！</span>
+                <a class="login" href="file:///D:/phpstudy/PHPTutorial/WWW/xiangmu/html/log.html">登录</a>
+                <span class="sep">|</span>
+                <a href="file:///D:/phpstudy/PHPTutorial/WWW/xiangmu/html/login.html">免费注册</a>
+            </div>
+
+            <div id="topNavLeft2" class="f-hkdn f-hkdnact">
+                <a class="app" href="" rel="">
+                    手机考拉
+                    <span class="m-notice">
+                        <img src="https://haitao.nos.netease.com/9c6b0d6c-4a71-4018-8fb6-46496f51caff.png" width="116px"
+                            height="116px">
+                        <strong class="txt">
+                            下载APP
+                            <br>
+                            领1000元新人礼包
+                        </strong>
+                    </span>
+                </a>
+            </div>
+
+            <ul id="topNavRight">
+
+                <li class="f-hkdn f-hkdnact">
+                    <a href="" class="toplevel newnav checkin" rel="">每日签到</a>
+                    <span class="sep">|</span>
+                </li>
+
+                <li>
+                    <a class="toplevel newnav2" href="" rel="">我的订单</a>
+                    <span class="sep">|</span>
+                </li>
+
+
+                <li class="dropmenu personal" id="j-dropmenuPersonal">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder" href="" rel="">
+                            个人中心
+                            <i class="arr"></i>
+                            <em class="w-icon w-icon-14" id="personalTips"></em>
+                        </a>
+                        <span class="sep f-hkdn f-hkdnact">|</span>
+                        <!-- <div class="mcDropMenu">      
+                                        <a href="" user="true" rel="">
+                                            <span class="cnt">
+                                                我的优惠券
+                                                <i class="w-icon w-icon-15" id="couponTip"></i>
+                                            </span>
+                                        </a>
+                                        <a href="" user="true" rel="" >
+                                            <span class="cnt">
+                                                我的红包
+                                                <i class="w-icon w-icon-15" id="redpacketTip"></i>
+                                            </span>
+                                        </a>
+                                        <a href="" user="true" rel="">
+                                        <span class="cnt">我的考拉豆</span>
+                                        </a>
+                
+                                        <span class="spliter"></span>
+                                        <a href=""  rel="">
+                                            <span class="cnt">帐号管理</span>
+                                        </a>
+                                        <a href=""  rel="">
+                                            <span class="cnt">我的实名认证</span>
+                                        </a>
+                
+                                        <span class="spliter"></span>
+                                        <a href=""  rel="" >
+                                            <span class="cnt">我收藏的商品</span>
+                                        </a>
+                                        <a href="" rel="" >
+                                            <span class="cnt">我关注的品牌</span>
+                                        </a>
+                                        <span class="spliter"></span>
+                                        <a href=""rel="">
+                                            <span class="cnt">
+                                                售后管理
+                                                <i class="w-icon w-icon-14" id="aftersaleTip"></i>
+                                            </span>
+                                        </a>
+                                    </div> -->
+                    </div>
+                </li>
+
+                <li class="dropmenu service f-hkdn f-hkdnact">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder nolink" href="" rel="">
+                            客户服务
+                            <i class="arr"></i>
+                        </a>
+                        <span class="sep">|</span>
+
+                        <!-- <div class="mcDropMenu">
+                                            <a class="contact j-openService" rel="">
+                                                <i class="w-icon w-icon-contact"></i>
+                                                联系客服
+                                            </a>
+                                            <a class="help" href="" rel="">
+                                                <i class="w-icon w-icon-help">&nbsp;</i>帮助中心
+                                            </a>
+                                            <a class="j-propertyProtection" href="" rel="" >
+                                                <i class="act-icon-prp">&nbsp;</i>知识产权保护
+                                            </a>
+                                            <a class="rule" href="" rel="">
+                                                <i class="w-icon w-icon-rule">&nbsp;</i>规则中心
+                                            </a>
+                                        </div> -->
+                    </div>
+                </li>
+                <li class="dropmenu recharge f-hkdn f-hkdnact">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder nolink" href="" rel="">
+                            充值中心<i class="arr"></i>
+                        </a>
+                        <span class="sep">|</span>
+                        <!-- <div class="mcDropMenu">
+                                            <a href="" rel="" >话费流量</a>
+                                            <a id="gameRecharge" href="" rel="" >游戏充值</a>
+                                            <a href="" rel="" >AppStore充值卡</a>
+                                        </div> -->
+                    </div>
+                </li>
+
+                <li class="cinform f-hkdn f-hkdnact">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder nolink" href="" rel="">
+                            消费者权益<i class="arr"></i>
+                        </a>
+                        <span class="sep">|</span>
+                        <!-- <div class="mcDropMenu">
+                                        <a id="customerInform" href="" rel="">消费者告知书</a>
+                                        <a href="" rel="" >消费投诉公示</a>
+                                    </div> -->
+                    </div>
+                </li>
+
+                <li class="dropmenu more f-hkdn f-hkdnact">
+                    <div class="mcDropMenuBox focuson">
+                        <a class="toplevel topNavHolder nolink" href="" rel="">
+                            更多<i class="arr"></i>
+                        </a>
+                        <!-- <div class="mcDropMenu">
+                                        <a id="addFavBtn" href="" rel="">收藏本站</a>
+                                        <a class="wb clearfix" href=""rel="">
+                                            <span class="txt">新浪微博</span>
+                                        </a>
+                                        <a class="nolink clearfix" href="" rel="">
+                                            <span class="txt">微信公众号</span>
+                                        </a>
+                                        <a class="yixin nolink clearfix" href="" rel="">
+                                             <span class="txt">易信公众号</span>      
+                                        </a>
+                                        <a class="cooperation" href="" rel="">招商合作</a>
+                                        <a class="richjob" href="" rel="" >考拉招聘</a>
+                                    </div> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 查询 -->
+    <div class="f-dn">
+        <div class="f-c">
+
+            <a href=""><img src="../img/images/1.gif" /></a>
+
+            <div class="m-searchiptbox m-searchiptbox-1">
+                <div id="topsearchbox">
+                    <div id="topsearch">
+                        <div class="wrap">
+                            <a href=""><span class="icon iconfont">&#xe609;</span></a>
+                            <input id="topSearchInput" type="text" placeholder="艾维诺沐浴露">
+                            <ul id="list">
+
+                            </ul>
+                        </div>
+                        <div class="bi">
+                            <a href=""> <span class="iconfont">&#xe609;</span></a>
+                        </div>
+                        <span class="topsearchboxBackGround">
+                            <span id="topSearchBtn" class=""></span>
+                        </span>
+                        <span class="w-icon w-icon-26"></span>
+                    </div>
+                    <div class="m-searchhint">
+                        <ul id="searchhintlist" style="display:none;"></ul>
+                    </div>
+                </div>
+
+                <ul id="suggestlist" class="m-suggestlist clearfix">
+                    <li>
+                        <a target="_blank" class="suggestitem" href=" datakey=" 面膜">面膜</a>
+                    </li>
+                    <li>
+                        <span class="sep">|</span><a class="suggestitem" href="" datakey="口红">口红</a>
+                    </li>
+                    <li>
+                        <span class="sep">|</span><a class="suggestitem" href="" datakey="减肥">减肥</a>
+                    </li>
+                    <li>
+                        <span class="sep">|</span><a class="bold showcolor suggestitem" href="">全球工厂店</a>
+                    </li>
+                    <li>
+                        <span class="sep">|</span><a class="suggestitem" href="" datakey="运动鞋">运动鞋</a>
+                    </li>
+                    <li>
+                        <span class="sep">|</span><a class="suggestitem" href="" datakey="项链">项链</a>
+                    </li>
+                    <li>
+                        <span class="sep">|</span><a class="suggestitem" href="" datakey="女包">女包</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="" rel="" class="m-shopcartnew f-hkdn m-shopcartnew-1">
+                <span class="iconfont">&#xe607;</span>
+
+                <span class="wrap3">
+                    购物车
+                    <b class="num" id="newcartnum" style="display:none">0</b>
+                </span>
+            </a>
+
+
+        </div>
+    </div>
+
+    <!-- 图上的导航 -->
+    <div id="topTabBox">
+        <div id="topTab" class="clearfix f-hkdn">
+            <div id="topCats" class="mavtim-cats">
+                <div id="" class="toplevel">
+                    <img src="../img/images/33.gif" alt="" />
+                    <span>所有分类</span>
+                </div>
+
+                <ul class="catitmlst j-catmenu" data-lazyload=1>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/12.png"><span
+                                class="iconfont">&#xe616;</span>美容彩妆</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"> <img class="icon" src="../img/images/10.png"><span
+                                class="iconfont">&#xe616;</span>母婴儿童</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/18.png"><span
+                                class="iconfont">&#xe616;</span>营养保健</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/22.png"><span
+                                class="iconfont">&#xe616;</span>数码家电</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/16.png"><span
+                                class="iconfont">&#xe616;</span>个人洗护</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"> <img class="icon" src="../img/images/15.png"><span
+                                class="iconfont">&#xe616;</span>轻奢</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/28.png"><span
+                                class="iconfont">&#xe616;</span>服饰鞋靴</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/21.png"><span
+                                class="iconfont">&#xe616;</span>手表配饰</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"> <img class="icon" src="../img/images/26.png"><span
+                                class="iconfont">&#xe616;</span>运动户外</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/30.png"><span
+                                class="iconfont">&#xe616;</span>家居生活</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="t"><img class="icon" src="../img/images/24.png"><span
+                                class="iconfont">&#xe616;</span>坏球美食</span>
+                        <div class="m-ctgcard f-cb">
+                            <a> <span>卸妆</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>男士洗面奶</span></a>
+                            <a><span>沐浴露</span></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <ul id="funcTab" class="clearfix">
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="file:///D:/phpstudy/PHPTutorial/WWW/xiangmu/html/xiangmu.html"> 首页</a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="">今日限时购 </a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="">每日上新</a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="">国家馆</a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="">海外旗舰店</a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href=""> 工厂店</a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel">品质奶粉 </a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="">人气面膜 </a>
+                </li>
+                <li class="navitm " data-effect="1">
+                    <a class="toplevel" href="">礼品卡</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div style="height: 400px;">
+        <img class="imgwrap" src="../img/images/66.jpg" style="width:100%; height: 400px;" id="auto-id-1550151841283">
+    </div>
+
+
+    <div class="container">
+        <div class="stairs">
+            <h2>基础护肤-新品榜</h2>
+            <div class="box">
+                <ul class="goods-list f-cb">
+                    <li class="g-col col-1x4">
+                        <div class="goods-bd">
+                            <div class="goods-bd-border" style="border: 1px solid;">
+                                <div class="goods-img">
+                                    <a href="file:///D:/phpstudy/PHPTutorial/WWW/xiangmu/html/commodity.html"
+                                        target="_blank"> 
+                                        <img class="img u-loaded"
+                                            src="https://pop.nosdn.127.net/8819eeec-844c-4009-9088-b2ea98ce31df?imageView&amp;thumbnail=244x244&amp;quality=95&amp;type=webp"
+                                            id="auto-id-1550202082898">
+                                    </a>
+                                    
+                                    <div class="m-tagitem">
+
+                                    </div>
+
+                                    <div class="m-tagitem2">
+
+                                        <div class="u-tagbtn">新品</div>
+                                    </div>
+                                    <div class="m-tagitem3">
+
+                                    </div>
+
+                                    <div class="m-tagitem4">
+
+                                    </div>
+                                </div>
+                                <h5 class="goods-title"> <a
+                                        href="https://www.kaola.com/product/2851114.html?kpm=MTAwMg==.MTc4NTI=.MzA0ODg0.MQ==@@M2VhLmEyODlkMy40LmJkNmMxYS1iYzhiN2MtZWMzNDZl"
+                                        target="_blank">LANCASTER 兰嘉丝汀 理肤舒氧保湿凝霜 50ml
+                                    </a> </h5>
+                                <h6 class="goods-introduce">
+                                    清新保湿，天然锁水 </h6>
+                                <div class="m-priceitem" style="color: rgb(255, 30, 50);">
+                                    <span class="price"><i class="rmb">¥</i>241</span>
+                                    <span class="mktprice"><del>¥380</del></span>
+                                </div>
+                                <a href="javascript:;" class="goods-btn">
+                                    <span class="goods-btn-span" style="background-color: rgb(255, 30, 50);">立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="stairs">
+            <h2>魅惑彩妆-新品榜</h2>
+            <div class="box"></div>
+
+        </div>
+        <div class="stairs">
+            <h2>迷人香氛-新品榜</h2>
+            <div class="box"></div>
+
+        </div>
+    </div>
+
+    <div class="btns">
+        <a href=""><span class="six"><span class="iconfont">&#xe607;</span>购物车</span></a>
+        <ul>
+            <li class="active">基础护肤</li>
+            <li>魅惑彩妆</li>
+            <li>迷人香氛</li>
+            <li><a href=""><span class="iconfont">&#xe62c;</span>Top</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <!-- 依赖的工具库 jquery  -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- 插件 -->
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/art-template.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+    <!-- 独立的业务逻辑 -->
+    <script src="../js/list.js"></script>
+</body>
+
+</html>

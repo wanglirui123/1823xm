@@ -1,0 +1,313 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,a,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    font: inherit;    vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {    line-height: 1;}ol, ul {    list-style: none;}blockquote, q {    quotes: none;}blockquote:before, blockquote:after,q:before, q:after {    content: '';    content: none;}table {    border-collapse: collapse;    border-spacing: 0;}
+*{
+    text-decoration:none;
+}
+.j-indexTopFixed{
+    width:100%;
+    height:101px;
+    border-bottom: 1px solid #ddd;
+}
+.j-indexTopFixed #docHeadWrap{
+    width:1000px;
+    height:100px;
+    margin:0 auto;
+}
+.j-indexTopFixed #docHeadWrap .logokaola{
+    float:left;
+    padding-right:250px;
+}
+.j-indexTopFixed #docHeadWrap .logokaola img {
+    margin-top:16px;
+}
+.j-indexTopFixed #docHeadWrap .topimg{
+    float: right;
+    margin-left:100px;
+}
+
+.login-banner{
+    width:100%;
+    height:600px;
+    background:#f8f8f8;
+}
+.login-banner .m-loginBody{
+    width:1000px;
+    height:600px;
+    margin:0 auto;
+}
+.login-banner .m-loginBody .hotarea img{
+    margin-left: 10px;
+    margin-top: 109px;
+}
+
+
+.login-banner .m-loginBody .loginwrap{
+    float:right;
+    width:350px;
+    height:366px;
+    border:1px solid #ddd;
+    margin-top:120px;
+    margin-right:50px;
+}
+/* top */
+.login-banner .m-loginBody .loginwrap .top{
+    width:360px;
+    height:50px;
+    border-bottom:1px solid #ddd;
+}
+.login-banner .m-loginBody .loginwrap .top div{
+    float:left;
+    line-height:52px;
+    width:175px;   
+    text-align:center; 
+    font-weight:700;
+  
+}
+.login-banner .m-loginBody .loginwrap .top div:hover{
+    color:#e31436;
+}
+
+.login-banner .m-loginBody .loginwrap .top span{
+    color:#ddd;
+    font-size:20px;
+    float:left;
+    margin-top:15px
+}   
+
+/* 手机号登陆 */
+#loginbox{
+    width:350px;
+    height:254px;
+    background:#fff;
+    padding-top:20px; 
+}
+#loginbox .m-contanier{
+    width:270px;
+    height:219px;
+    margin:0 auto;
+    display:block
+}
+.u-tab{
+    width:270px;
+    height:24px;
+    font-size:14px;    
+}
+.u-tab a{
+    float:right;
+    color:#666666;
+    line-height:24px;
+}
+.u-tab a:hover{
+    color:#e31436;
+}
+
+.inputbox{
+    width:270px;
+    height: 34px;
+    border:1px solid #d5d5d5;
+    border-radius: 2px; 
+    margin-top:10px;
+    
+}
+.inputbox .iconfont{
+    font-size:20px;
+    color:#ddd;
+    padding:0 5px;
+}
+.inputbox .dlemail{
+    height:32px;
+    width:235px;
+    border:none;
+}
+.inputbox .box{
+    font-size:12px;
+    color:red; 
+    display:block;
+    margin-top:60px;
+}
+
+.inputbox .box .iconfont{
+    font-size:14px;
+    color:red; 
+}
+
+.u-input input{
+    width:270px;
+    height: 34px;
+    border:1px solid #d5d5d5;
+    border-radius: 2px; 
+    margin-top:15px;
+}
+.u-input .box1{
+    font-size:12px;
+    color:red; 
+    display:block;
+    margin-top:-30px;
+    margin-bottom: 20px;
+}
+.u-input .box1 .iconfont{
+    font-size:14px;
+    color:red; 
+}
+.u-input a{
+    display:block;
+    width:97px;
+    height:34px;
+    border:1px solid #d5d5d5;
+    border-radius: 2px; 
+    text-align:center;
+    line-height: 34px;
+    font-size:14px;
+    text-decoration:none;
+    color:#000;
+    position: relative;
+    top:-37px;
+    left:172px;
+    background:#d5d5d5;
+}
+.u-input a:hover{
+    color:#e31436;
+}
+
+.f-cb{
+    width:270px;
+    height: 36px;
+    border:1px solid #d5d5d5;
+    border-radius: 4px; 
+    background:#e31436;
+    margin-top:-10px;
+    text-align:center;
+    line-height:36px;
+}
+.f-cb a{
+    display: block;
+    color:#fff;
+}
+.f-cb:hover{
+    opacity:0.8;
+}
+.f-cb .box2{
+    font-size:12px;
+    color:red; 
+    display:block;
+    margin-top:-70px;
+    margin-right:170px;
+   
+}
+
+.f-cb .box2 .iconfont{
+    font-size:14px;
+    color:red; 
+}
+
+.b-unlogn{
+    width:270px;
+    height:20px;
+    margin-top:10px;
+    line-height: 20px;
+}
+.b-unlogn .u-checkbox input{
+    width:16px;
+    height:16px;
+    border: solid 1px #aaa;
+    color: #999;
+    font-size: 12px;
+}
+.b-unlogn label{
+    font-size:12px;
+    color:#999;
+}
+.b-unlogn label:hover{
+    color:#e31436;
+}
+.b-unlogn a{
+    float:right;
+    font-size:12px;
+    text-decoration:none;
+    color:#999;
+}
+.b-unlogn a:hover{
+    color:#e31436;
+}
+.proto{
+    height:18px;
+    width:270px;
+    margin-top:10px;
+    font-size:12px;
+    color:#999;
+    margin-left:50px;
+}
+.proto a{
+    color:#999;
+}
+
+.loginwrap .bottom{
+    width:350px;
+    height:41px;
+    line-height: 41px;
+    border-top:1px solid #ddd;
+}
+.loginwrap .bottom ul{
+    float:left;
+    margin-left:40px;
+}
+.loginwrap .bottom ul li{
+    float:left;
+    font-size:22px;
+    margin-left:5px;
+}
+.loginwrap .bottom ul li:hover{
+    opacity:0.8;
+}
+.loginwrap .bottom a{
+    font-size:14px;
+    margin-left:60px;
+    text-decoration:none;
+    color:#e31436;
+
+}
+.loginwrap .bottom a:hover{
+    text-decoration:underline;
+}
+
+/* <!-- 邮箱登陆 --> */
+
+
+
+/* 底部 */
+
+#aboutNEST{
+    width:100%;
+    height:115px;
+    margin:50px 0 100px 0;
+    text-align:center;
+}
+#aboutNEST a{
+    font-size: 14px;
+    color:#666;
+  
+}
+#aboutNEST .sep{
+    margin:0 20px;
+    color:#666
+}
+#aboutNEST .m-license{
+    font-size: 13px;
+    color:#999;
+    margin:0 20px;
+    padding-top:10px;
+}
+#aboutNEST .m-license a:hover{
+    color:#999;
+}
+.f-tac span  a img{
+    width:80px;
+    height:35px;
+    padding-top:10px;
+}
+.f-tac .u-shield img{
+    width:27.9px;
+    height:35px;
+    margin-left:5px;
+
+}
+
