@@ -9,23 +9,27 @@ $(function () {
 });
 
 //吸顶菜单
-// $(function () {
-//     var a = $('.m-catnav'),
-//         b = a.offset();//返回或设置导航栏相对于文档的偏移(位置)
-//     //加个屏幕滚动事件，c是滚动条相当于文档最顶端的距离
-//     $(document).on('scroll', function () {
-//         var c = $(document).scrollTop();
-//         //*当滚动的屏幕距离大于等于导航栏本身离最顶端的距离时（判断条件）给它加样式（根据自己业务的条件加样式，一般如下）*／
-//         if (b.top <= c) {
-//             a.css({ 'position': 'fixed', 'top': '0px' })
-//         } else {
-//             a.css({ 'position': 'absolute', 'top': '250px' })
-//         }
-//     })
-// });
 
-
-
+window.onscroll = function(){
+    if(window.scrollY>=300){
+        document.querySelector(".m-catnav").style.position = "fixed";
+        document.querySelector(".m-catnav").style.left = "0";
+        document.querySelector(".m-catnav").style.top = "0";
+    }else{
+        document.querySelector(".m-catnav").style.position = "static";
+    }
+}
+function returnback(){
+    var scrollTop = window.scrollY;
+    var timi = setInterval(function(){
+        scrollTop=scrollTop-50;
+        window.scrollTo(0,scrollTop);
+        if(scrollTop<=0){
+            scrollTop=0;
+            clearInterval(timi);
+        }
+    },10)
+}
 
 
 
@@ -44,7 +48,7 @@ $.ajax({
     success: function (res) {
         console.log(res.lis)
         var html = ""
-        for(var i = 0;i < res.lis.length;i++){
+        for(var i = 0;i <= res.lis.length; i ++){
             console.log(i)
 
             html = `<li class="m-goods">
@@ -85,66 +89,6 @@ $.ajax({
     }
     
 })
-
-
-
-
-// $.ajax({
-//     type: 'get',
-//     url: '../style/activity.json',
-//     success: function (arr) {
-        // for (var i = 0; i < arr.length; i++) {
-        //     $(`<li class="m-goods">
-        //              <a href="" target="_blank" class="imgwrap">
-        //                  <img class="gimg img-lazyloaded"
-        //                      src='${arr[i].img}'
-        //                      id="auto-id-1550219272712">
-        //              </a>
-        //              <div class="detail">
-        //                  <p class="tlt">
-        //                      <a class="gtlt" href="">
-                
-        //                      ${arr[i].title}
-                
-        //                      </a>
-        //                  </p>
-        //                  <p class="intro">
-        //                      <a class="gintro f-toe2" href="">指套牙刷 硅胶软毛</a>
-        //                  </p>
-        //                  <p class="price">
-        //                      <span class="u-gprice">
-        //                          <em class="crtprice"><span class="symbol">¥</span>${arr[i].Price}</em>
-        //                          <i class="mktprice">¥<del>${arr[i].former}</del></i>
-        //                      </span>
-                
-        //                      <span class="u-gtag"><b class="num">8.3</b>折</span>
-                
-        //                  </p>
-        //                  <p class="btnwrap">
-        //                      <a href="" class="u-gbuy">
-        //                      ${arr[i].timer}
-        //                      </a>
-        //                  </p>
-        //              </div>
-        //          </li>      
-        //         `)
-//                 .appendTo('.m-goodszone .goodsWrap .m-goodslst');
-//             //         if(arr[i].topTip){
-//             //               $(`<span class="topTip">${arr[i].topTip}</span> `)
-//             //   .appendTo($('.m-goodszone .goodsWrap .m-goodslst').eq(i).find('.thb'));
-//             //         }
-//         }
-//     },
-//     error: function (msg) {
-//         console.log(msg);
-//     }
-// });
-
-
-
-
-
-
 
 
 
